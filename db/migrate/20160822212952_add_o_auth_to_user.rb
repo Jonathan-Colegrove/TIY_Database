@@ -1,6 +1,4 @@
 class AddOAuthToUser < ActiveRecord::Migration[5.0]
-  def change
-  end
 
   def up
     # Which provider are we using (e.g. github, facebook, twitter)
