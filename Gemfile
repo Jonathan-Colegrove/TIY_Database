@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+gem 'font-awesome-rails'
+gem 'bootstrap-social-rails'
+
 # Authentication via oauth
 gem 'omniauth'
 gem 'omniauth-github'
