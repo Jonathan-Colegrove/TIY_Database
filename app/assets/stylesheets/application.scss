@@ -1,0 +1,188 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+
+ body {
+   padding-top: 70px;
+   font-family: Baskerville, "Baskerville Old Face", Palatino, "Book Antiqua", Georgia, serif;
+   color: white;
+   background-color: black;
+   //  background-image: image-url("over_grass.jpg");
+   //  background-size: cover;
+  }
+
+ .navbar {
+    background-color: #266A2E;
+  }
+
+  .separator {
+    display: flex;
+    justify-content: space-between;
+  }
+
+ .table-hover > tbody > tr:hover {
+    background-color: #266A2E;
+  }
+
+.logo {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+// Testing this
+// .form-signin
+// {
+//     max-width: 330px;
+//     padding: 15px;
+//     margin: 0 auto;
+// }
+// .form-signin .form-signin-heading, .form-signin .checkbox
+// {
+//     margin-bottom: 10px;
+// }
+// .form-signin .checkbox
+// {
+//     font-weight: normal;
+// }
+// .form-signin .form-control
+// {
+//     position: relative;
+//     font-size: 16px;
+//     height: auto;
+//     padding: 10px;
+//     -webkit-box-sizing: border-box;
+//     -moz-box-sizing: border-box;
+//     box-sizing: border-box;
+// }
+// .form-signin .form-control:focus
+// {
+//     z-index: 2;
+// }
+// .form-signin input[type="text"]
+// {
+//     margin-bottom: -1px;
+//     border-bottom-left-radius: 0;
+//     border-bottom-right-radius: 0;
+// }
+// .form-signin input[type="password"]
+// {
+//     margin-bottom: 10px;
+//     border-top-left-radius: 0;
+//     border-top-right-radius: 0;
+// }
+// .account-wall
+// {
+//     margin-top: 20px;
+//     padding: 40px 0px 20px 0px;
+//     background-color: #f7f7f7;
+//     -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+//     -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+//     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+// }
+// .login-title
+// {
+//     color: #555;
+//     font-size: 18px;
+//     font-weight: 400;
+//     display: block;
+// }
+// .profile-img {
+//     width: 96px;
+//     height: 96px;
+//     margin: 0 auto 10px;
+//     display: block;
+//     -moz-border-radius: 50%;
+//     -webkit-border-radius: 50%;
+//     border-radius: 50%;
+// }
+// .need-help {
+//     margin-top: 10px;
+// }
+// .new-account {
+//     display: block;
+//     margin-top: 10px;
+// }
+
+ //
+ //  header {
+ //    display: flex;
+ //    justify-content: space-between;
+ //  }
+ //
+ //  .most_recent {
+ //    margin-left: 2em;
+ //  }
+ //
+ //  .right_nav {
+ //    display: flex;
+ //    align-items: flex-start;
+ //  }
+ //
+ //  header input {
+ //    padding: 0;
+ //    line-height: 22px;
+ //    vertical-align: middle;
+ //  }
+ //
+ //  header input[type=text] {
+ //    background-color: transparent;
+ //    color: white;
+ //    border: none;
+ //  }
+ //
+ //  ::-webkit-input-placeholder {
+ //    color: #228B22;
+ //  }
+ //  :-ms-input-placeholder {
+ //    color: #228B22;
+ //  }
+ //  ::-moz-placeholder {
+ //    color: #228B22;
+ //  }
+ //  :-moz-placeholder {
+ //    color: #228B22;
+ //  }
+ //
+ //  h1 {
+ //    color: #228B22;
+ //    text-shadow: 2px 2px white;
+ //  }
+ //
+ // ul {
+ //    list-style: none;
+ //  }
+ //
+ //  label{
+ //      display:inline-block;
+ //      width:100px;
+ //  }
+ //
+ //  button {
+ //    background-color: #7FFF00;
+ //    border-radius: 15px;
+ //    border: 2px solid #228B22;
+ //  }
+ //
+ //  button a {
+ //    text-decoration: none;
+ //    color: white;
+ //  }
+ //
+ //  button:hover {
+ //    background-color: #228B22;
+ //  }
