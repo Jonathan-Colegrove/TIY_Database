@@ -10,10 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160823010836) do
+ActiveRecord::Schema.define(version: 20160823182553) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "associations", force: :cascade do |t|
+    t.integer  "term_id"
+    t.integer  "category_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["category_id"], name: "index_associations_on_category_id", using: :btree
+    t.index ["term_id"], name: "index_associations_on_term_id", using: :btree
+  end
 
   create_table "categories", force: :cascade do |t|
     t.string   "name"
@@ -42,4 +51,6 @@ ActiveRecord::Schema.define(version: 20160823010836) do
     t.string   "access_token"
   end
 
+  add_foreign_key "associations", "categories"
+  add_foreign_key "associations", "terms"
 end

@@ -26,7 +26,13 @@
     <strong>Resource:</strong>
     <%= @term.resource %>
   </p>
+
+  <p>Categories:</p>
+  <% @term.categories.each do |category| %>
+      <p><%= category.name %></p>
+  <% end %>
 </div>
+
 <% if @term.authorized?(current_user) %>
   <%= link_to 'Edit', edit_term_path(@term), class: "btn btn-default" %> |
 <% end %>
