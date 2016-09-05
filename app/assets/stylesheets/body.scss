@@ -1,0 +1,37 @@
+body {
+  padding-top: 70px;
+  font-family: Baskerville, "Baskerville Old Face", Palatino, "Book Antiqua", Georgia, serif;
+  color: #FF004A;
+  font-size: 18px;
+  font-weight: bolder;
+  background-color: black;
+   background-image: image-url("over_grass.jpg");
+   background-size: cover;
+ }
+
+.navbar {
+   background-color: #266A2E;
+ }
+
+ #header-link {
+   color: gold;
+ }
+
+ .separator {
+   display: flex;
+   justify-content: space-between;
+ }
+
+.table-hover > tbody > tr:hover {
+   background-color: #266A2E;
+ }
+
+.background {
+  background-color: rgba(57, 255, 183, 0.5);
+ }
+
+.logo {
+ display: flex;
+ align-content: center;
+ align-items: center;
+}

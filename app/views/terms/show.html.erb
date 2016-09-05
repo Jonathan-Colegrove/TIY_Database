@@ -1,33 +1,33 @@
-<p id="notice"><%= notice %></p>
+<div class="background">
+  <p id="notice"><%= notice %></p>
 
-<% if @term.user %>
+  <% if @term.user %>
+    <p>
+      Created by: <%= @term.user.name %>
+    </p>
+  <% end %>
+
   <p>
-    Created by: <%= @term.user.name %>
+    <strong>Name:</strong>
+    <%= @term.name %>
   </p>
-<% end %>
 
-<p>
-  <strong>Name:</strong>
-  <%= @term.name %>
-</p>
+  <p>
+    <strong>Definition:</strong>
+    <%= @term.definition %>
+  </p>
 
-<p>
-  <strong>Definition:</strong>
-  <%= @term.definition %>
-</p>
+  <p>
+    <strong>Author:</strong>
+    <%= @term.author %>
+  </p>
 
-<p>
-  <strong>Author:</strong>
-  <%= @term.author %>
-</p>
-
-<p>
-  <strong>Resource:</strong>
-  <%= @term.resource %>
-</p>
-
+  <p>
+    <strong>Resource:</strong>
+    <%= @term.resource %>
+  </p>
+</div>
 <% if @term.authorized?(current_user) %>
   <%= link_to 'Edit', edit_term_path(@term), class: "btn btn-default" %> |
 <% end %>
-
 <%= link_to 'Back', terms_path, class: "btn btn-default" %>
